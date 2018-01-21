@@ -24,6 +24,7 @@ a:hover {
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
+
 }
 
 
@@ -139,9 +140,9 @@ iframe {
 .contact100-form-title {
   width: 100%;
   display: block;
-  font-family: Raleway-Black;
+ font-family: 'Open Sans', sans-serif;
   font-size: 30px;
-  color: #333333;
+  color: #585858;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 45px;

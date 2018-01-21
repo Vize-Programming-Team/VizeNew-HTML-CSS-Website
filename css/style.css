@@ -112,13 +112,21 @@ nav.navbar.navbar-default {
     background: none;
 }
 /*--drop-down--*/
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+/*.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #745EC5;
     border: none;
+}*/
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #ffffff00;
+    border: 1px solid #b9b6b6;
 }
-ul.dropdown-menu li a {
+/*ul.dropdown-menu li a {
     color: #745EC5;
   font-size: 1.1em;
+}*/
+ul.dropdown-menu li a {
+    color: #212529;
+    font-size: 1.1em;
 }
 
 
@@ -128,10 +136,11 @@ ul.dropdown-menu li a {
     margin-top: 10px;
     min-width: 100%;
 }
+
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    background-color: #745EC5;
+    background-color: #ffffff;
 }
 /*--//drop-down--*/
 /*--Kumya--*/
@@ -265,7 +274,7 @@ ul.dropdown-menu li a {
   -o-transform: scale3d(0.7, 0.6, 1);
   -ms-transform: scale3d(0.7, 0.6, 1);
 }
-.more.more2 a {
+/*.more.more2 a {
     color: #fff;
 }
 .more.more2 .button-pipaluk.button--inverted::after {
@@ -284,7 +293,7 @@ ul.dropdown-menu li a {
 }
 .more.more22 .button-pipaluk::before {
   border-color:#69bab6;
-}
+}*/
 /*--//baner--*/
 /*--Slider Part starts Here--*/
 #slider2,
@@ -2947,12 +2956,22 @@ h5.subheader3 {
 /*=====middel===*/
 /*================jugal css start=================*/
      
-   
+   a.dropdown-toggle.boderbtn {
+    border: 1px solid #b9b6b6;
+    /* margin-top: 6px; */
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 4px;
+    border-radius: 5px;
+    padding-left: 9px;
+    padding-right: 7px;
+}
 
 .img-thumbnail {
     display: inline-block;
-  
+     border: 0px!important;
     height: 21px!important;
+    background-color: #fff0;
   }
 
 .navbar-header.logo {
@@ -2978,7 +2997,7 @@ nav.navScroll li a.active {
     color: #000000!important;
 }
 .top-nav ul li a:hover {
-    color: #ffffff;
+    color: #00000;
 }
 nav.navScroll ul li a {
     color: #000000!important;
@@ -3081,22 +3100,62 @@ ul.footer_nav.navigation4 {
 
 
 /*=====================companies=== page start=================*/
+
+
+    .btn-outline {
+    background-color: transparent;
+    color: #000000;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #000000;
+    border: 1px solid #000000;
+        font-size: 18px;
+
+}
+
+a.btn.btn-primary.btn-outline:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
 /* Companies1 header*/
 
-select.selectpicker_text, option.option1 {
-    width: 250px;
+/*          .icon-small
+{
+    height:18px;
+    margin:0;
+  padding:0;
 }
 
-option.option1 {
-    overflow: hidden;
-    white-sapce: no-wrap;
-    text-overflow: ellipsis;
+.icon-medium
+{
+    height:22px;
+  margin:0;
+  padding:0;
+}*/
+
+.row.all_boxcolor1.select_box {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: #fff;
+    box-shadow: 0px 1px 5px 0px;
 }
-.main_dropdown_start {
+button.btn.btn-default.dropdown-toggle.width-btn {
+    width: 100%;
+    border-radius: 0px!important;
+        font-size: 19px;
+}
+ul.dropdown-menu.select_widthbox {
+    width: 100%;
+}
+
+/*main_dropdown_start {
     padding-top: 3em;
     padding-bottom: 2em;
     background: #333;
-}
+}*/
 
 div#companies1 {
     padding-bottom: 4em;
@@ -3112,6 +3171,7 @@ div#companies1 {
 .row.all_boxcolor{
   background-color: #ffffff;
   height: auto;
+  box-shadow: 0px 1px 5px 0px;
 }
 .continer_text1 p {
     color: #232326;
@@ -3225,7 +3285,7 @@ p.textp2 {
 }
 
 .welpad1{
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 span.headingoo {
     font-size: 24px;
@@ -3241,6 +3301,10 @@ span.headingoo {
     box-shadow: 1px 1px 5px 1px #dac1c1;
     padding: 22px;
 
+}
+
+.t1 p{
+  font-size: 20px;
 }
 /****** Style Star Rating Widget *****/
 
@@ -3324,22 +3388,121 @@ span.headingoo {
 
 /*about page*/
 .about{
-  padding-bottom: 0em;
+  padding-bottom: 6em;
   padding-top: 4em;
 }
 
 .banner-text  h2{
   color: #fff;
   font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
 }
 .al{text-align: center;}
 .cdoun{
   margin-top: 20px;
 }
 
+.bl{
+
+  background-color: #f2f2f2;
+ padding-bottom: 104px;
+}
 
 .about-row p{
   font-size: 19px;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+      padding-top: 22px;
+      color: #585858;
+
 }
 /*about page end*/
+
+.welpad12{
+  background-color: #ffffff;
+}
+
+/*about page end  20*/
+
+.prostar{
+
+  /*margin-bottom: 16px;*/
+    margin-top: 20px;
+}
+.goo{
+  font-size: 30px;
+   color: #745ec5!important;
+   font-weight: 600;
+}
+.locahed h4{
+  line-height: 2em;
+ 
+}
+.locahed h4 span{
+   color: #745ec5!important;
+   font-weight: bold;
+}
+
+.pargrf p{
+  font-size: 20px;
+  font-weight: 600;
+  color: #745ec5!important;
+  margin-top: -30px;
+}
+.review_text{
+  color: blue;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.reviews1 {
+  margin-top: 4px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-right: 72px;
+    padding-top: 10px;
+}
+.reviews1 ul li{
+  display: inline-block;
+  list-style: none;
+  width: 90px;
+  font-size: 21px;
+  font-weight: 600;
+   
+}
+
+.reviews1 ul li:hover{
+   background-color: #f2f2f2;
+   text-decoration :none;
+}
+.reviews1 ul li:active{
+   background-color: #f2f2f2;
+}
+.shdo img{
+      box-shadow: 0px 0px 0px 3px #f2f2f2;
+          height: 251px;
+
+}
+.renum  label{
+color: #745ec5!important;
+font-size: 21px;
+}
+/*tab  rb20*/
+.tabpanel {
+   font-size: 19px;
+}
+
+ .tabpanel ul li a:hover{
+      
+   /*   background-color: blue;*/
+ }
+ .all_boxcolor{
+   padding-top: 2em;
+    padding-bottom: 2em;
+    background: #fff;
+    box-shadow: 0px 1px 5px 0px;
+        margin-bottom: 34px;
+}
+
+
+
