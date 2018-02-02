@@ -1,0 +1,22 @@
+
+         jQuery(document).ready(function($) {
+         	$(".scroll").click(function(event){		
+         		event.preventDefault();
+         
+         $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+         	});
+         	$(function(){
+           $('.selectpicker').selectpicker();
+         });
+         });
+   
+      
+    $(document).ready(function(){
+        $(".slide-toggle").click(function(){
+            $(".navbar-collapse").animate({
+                width: "toggle"
+            });
+        });
+    });
+
+ 

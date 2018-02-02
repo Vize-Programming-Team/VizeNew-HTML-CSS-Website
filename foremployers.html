@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> web site</title>
+<title>Vize</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,7 +9,7 @@
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.9.0/css/flag-icon.css" rel="stylesheet" >  -->
 <!-- add selectbox -->
@@ -38,23 +38,16 @@
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 <link rel="stylesheet" href="css/prettySticky.css" type="text/css">
+<link href="css/button.css" rel=stylesheet type="text/css">
 <!-- //Custom Theme files -->
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script> 
+ <script src="js/animate.js"></script> 
 <!-- //js -->
 <!-- start-smoth-scrolling-->
- <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-		
-		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-			$(function(){
-    $('.selectpicker').selectpicker();
-});
-		});
-</script>
+ 
+<!-- toggle slide animation -->
+
  <!--//end-smoth-scrolling-->
 </head>
 <body>
@@ -63,44 +56,45 @@
 		<div class="banner-info">
 			<!--navigation-->
 			<div class="top-nav">
-				<nav>
-					<div class="container">
-						<div class="navbar-header logo">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<h2><a href="index.html"><img src="images/logo.png"></a></h2>
-						</div>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav left_nav">
-								<li><a href="companiesPage.html" class="link-kumya"><span >Companies</span></a></li>
-								<li><a href="foremployers.html" class="link-kumya"><span >For Employers</span></a></li>	
-								<li><a href="about.html" class="link-kumya"><span>About</span></a></li>
-								
-							</ul>
-							
-					<ul class="nav navbar-nav navbar-right">
+				 <nav>
+                  <div class="container">
+                     <div class="navbar-header logo">
+                        <button type="button" class="navbar-toggle collapsed slide-toggle " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <h2><a href="index.html"><img src="images/logo.png"></a></h2>
+                     </div>
+                     <!-- Collect the nav links, forms, and other content for toggling -->
+                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <ul class="nav navbar-nav left_nav">
+                           <li><a href="#" type="button" id="register-button-menu" class=" btn navbar-btn margin-right btn-green hvr-icon-forward">Sign Up or Login</a></li>
+                            <hr class="hr_line_width1"> 
 
-                		 <li><a href="#" type="button" id="register-button" class="btn navbar-btn margin-right btn-green hvr-icon-forward">Sign Up</a></li>
-                		<li><a href="#" class="navbar-link margin-right">LOG IN</a></li>
-                	 <li class="dropdown"> <a href="#" class="dropdown-toggle boderbtn" data-toggle="dropdown" role="button" aria-expanded="false"><img id="imgNavSel" src="" alt="..." class="img-thumbnail icon-small">  <span id="lanNavSel"></span> <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-            	         <li><a id="navIta" href="#" class="language"> <img id="imgNavIta" src="" alt="..." class="img-thumbnail icon-small">  <span id="lanNavIta">Spanish</span></a></li>
-                         <li><a id="navEng" href="#" class="language"><img id="imgNavEng" src="" alt="..." class="img-thumbnail icon-small">  <span id="lanNavEng">English</span></a></li>
-        	        </ul>
-                </li>
-             			 
-               <!--  end -->
-       
-            </ul>
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-				</nav>
+                           <li><a href="companies.html" class="link-kumya "><span >Companies</span></a></li>
+                           <li><a href="foremployers.html" class="link-kumya"><span >For Employers</span></a></li>
+                           <li><a href="about.html" class="link-kumya"><span>About</span></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                           <li><a href="#" type="button" id="register-button" class="btn navbar-btn margin-right btn-green hvr-icon-forward">Sign Up</a></li>
+                           <li><a href="#" class="navbar-link margin-right">LOG IN</a></li>
+                           <li class="dropdown">
+                              <hr class="hr_line_width2">
+                              <a href="#" class="dropdown-toggle boderbtn " data-toggle="dropdown" role="button" aria-expanded="false"><img id="imgNavSel" src="" alt="..." class="img-thumbnail icon-small">  <span id="lanNavSel"></span> <span class="caret"></span></a>
+                              <ul class="dropdown-menu header_drop_language" role="menu">
+                                 <li><a id="navIta" href="#" class="language"> <img id="imgNavIta" src="" alt="..." class="img-thumbnail icon-small">  <span id="lanNavIta">Español</span></a></li>
+                                 <li><a id="navEng" href="#" class="language"><img id="imgNavEng" src="" alt="..." class="img-thumbnail icon-small">  <span id="lanNavEng">English</span></a></li>
+                              </ul>
+                           </li>
+                           <!--  end -->
+                        </ul>
+                        <div class="clearfix"> </div>
+                     </div>
+                  </div>
+               </nav>
 			</div>	
 			<!--//navigation-->
 			<div class="banner-text">
@@ -134,7 +128,7 @@
 						        <h1>Attract more workers to optimize for workforce</h1>	
 									<br><br>
 								   <form class="example" action="/action_page.php">
-                                   <input type="text" placeholder="Search.." name="search">
+                                   <input type="text" placeholder="Search for a company..." name="search">
                                    <button type="submit">SEARCH</button>
                                    </form>
                               
@@ -157,13 +151,15 @@
 						<h1>Give yourself the best chance</h1>
 					
 						</div><br><br><br>
-					   <div class="col-md-12 welcome-text wtext-right">					
+					   <div class="col-md-12 ">					
 						<h2>JobAdvisor helps you discover which employers exist and compare them side by side. Apply for jobs, let them know you're interested, or simply follow the ones you like to add them to your short-list. </h2>
 					   </div>
 					    <div class="col-md-12 ">
 						<div class="more more2">
-
-									<a href="single.html" class="button-pipaluk button--inverted"> TAKE A LOOK</a>
+                                   <div class="titlestar">
+									<a href="#" class="button out-butt-dark">TAKE A LOOK</a>
+			                        </div><br>
+									<br><br>
 								</div>
 
 						</div>
@@ -193,51 +189,44 @@
 	<div class="footer">
 		<div class="container">
 			<div class="col-md-3 footer-grids">
-				<h4>JOBADVISOR</h4>
+				<h4>Vize</h4>
 				<ul class=" footer_nav navigation1 ">
-								<li><a href="#">Companies</a></li>
-								<li><a href="#">For Employers</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact</a></li>
 								<li><a href="#">About</a></li>
-								
-								
 				</ul>
 			</div>
 			<div class="col-md-3 footer-grids">
-				<h4>FIND OUT MORE</h4>
+				<h4>Employers</h4>
 				<ul class=" footer_nav navigation2">
-								<li><a href="#">For Job Seekers</a></li>
-								<li><a href="#">For Employers</a></li>
 								<li><a href="#">Pricing</a></li>
-								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Create a Free Employer Account</a></li>
+								<li><a href="#">Post a Job</a></li>
+								
 				</ul>
 				<!-- <p>123 NewYork City USA.<br>
 					<span>Office: 908-0000</span>
 				</p> -->
-				<!-- <div class="footer-bottom">
-					<a href="#"><span>Facebook</span></a>
-					<a href="#"><span>Pinterest</span></a>
-					<a href="#"><span>LinkedIn </span></a>
-					<a href="#"><span>Behance</span></a>
-				</div> -->
+				
 			</div>
 			<div class="col-md-3 footer-grids">
-				<h4>SUPPORT</h4>
+				<h4>Community</h4>
 				<ul class=" footer_nav navigation3">
+								<li><a href="#">Help Center</a></li>
+								<li><a href="#">Guidelines</a></li>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privacy & Cookies</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 footer-grids">
+				<h4>Community</h4>
+
+				<ul class=" footer_nav navigation4">
 								<li><a href="#">Privacy & Cookie Policy</a></li>
 								<li><a href="#">Terms of Use</a></li>
 								<li><a href="#">Subscription Services</a></li>
 								<li><a href="#">Community Standards</a></li>
 								<li><a href="#">Help</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 footer-grids">
-				<h4>CONNECT</h4>
-
-				<ul class=" footer_nav navigation4">
-								<li><a href="#">Facebook</a></li>
-								<li><a href="#">LinkedIn</a></li>
-								<li><a href="#">Twitter</a></li>
-								<li><a href="#">Instagram</a></li>
 					
 				</ul>
 				<!-- <a  class="footer-img" href="single.html"> <img src="images/f1.jpg" alt=""/></a>
@@ -245,6 +234,20 @@
 				<a class="footer-img" href="single.html"> <img src="images/f3.jpg" alt=""/></a> -->
 			</div>
 			<div class="clearfix"> </div>
+			<div>
+				<div class="container">
+					<div class="col-md-12">
+						<div class="footer-bottom">
+		          <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+				  <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+		    	  <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>	
+				 </div> 
+
+
+
+					</div>
+				</div>
+			</div>
 			<div class="footer-copy">
 				<p>© 2018. All rights reserved | Design by 2018</p>
 			</div>
@@ -260,10 +263,13 @@
     <script src="js/bootstrap.js"></script>
  <script type="text/javascript">
 $(document).ready(function(){
-        var itaImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Italien.gif";
-    	var engImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Grossbritanien.gif";
-		var deuImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Deutschland.gif";
-		var fraImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Frankreich.gif";
+        var itaImgLink = "images/mx.jpg";
+    	var engImgLink = "images/us.jpg";
+		var deuImgLink = "images/mx.jpg";
+		var fraImgLink = "images/mx.jpg";
+		
+
+
 
 		var imgBtnSel = $('#imgBtnSel');
 		var imgBtnIta = $('#imgBtnIta');
@@ -297,29 +303,29 @@ $(document).ready(function(){
 
 			if(currentId == "navIta") {
 				imgNavSel.attr("src",itaImgLink);
-				spanNavSel.text("ITA");
+				spanNavSel.text("");
 			} else if (currentId == "navEng") {
 				imgNavSel.attr("src",engImgLink);
 				spanNavSel.text("");
 			} else if (currentId == "navDeu") {
 				imgNavSel.attr("src",deuImgLink);
-				spanNavSel.text("DEU");
+				spanNavSel.text("");
 			} else if (currentId == "navFra") {
 				imgNavSel.attr("src",fraImgLink);
-				spanNavSel.text("FRA");
+				spanNavSel.text("");
 			}
 
 			if(currentId == "btnIta") {
-				imgBtnSel.attr("",itaImgLink);
+				imgBtnSel.attr("src",itaImgLink);
 				spanBtnSel.text("");
 			} else if (currentId == "btnEng") {
-				imgBtnSel.attr("",engImgLink);
+				imgBtnSel.attr("src",engImgLink);
 				spanBtnSel.text("");
 			} else if (currentId == "btnDeu") {
-				imgBtnSel.attr("",deuImgLink);
+				imgBtnSel.attr("src",deuImgLink);
 				spanBtnSel.text("");
 			} else if (currentId == "btnFra") {
-				imgBtnSel.attr("",fraImgLink);
+				imgBtnSel.attr("src",fraImgLink);
 				spanBtnSel.text("");
 			}
 			

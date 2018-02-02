@@ -2,7 +2,7 @@
 
 /*---------------------------------------------*/
 a {
-	font-family: Lato-Light;
+	font-family: adobe-garamond-pro;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -140,12 +140,13 @@ iframe {
 .contact100-form-title {
   width: 100%;
   display: block;
- font-family: 'Open Sans', sans-serif;
+/* font-family: 'Open Sans', sans-serif;*/
   font-size: 30px;
   color: #585858;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 45px;
+  font-family: initial;
 }
 
 
